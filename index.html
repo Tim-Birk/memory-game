@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8" />
+    <title>Meme-ory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="new-game-page">
+        <h1>MEME-ORY GAME</h1>
+        <button id="new-game" class="button">New Game</button>
+        <span id="best-score"></span>
+        <label># Cards: <input type="number" id="num-cards" required></input></label>
+        
+      </div>
+      
+      <div id="game">
+        <div id="game-hud">
+          <h1>Meme-ory Game!</h1>
+          <span id="current-score"></span>
+          <button id="reset-game" class="button">Reset Game</button>
+        </div>
+        <div id="card-container">
+
+        </div>
+      </div>
+  
+      <div id="game-over">
+        <h1>You Win!</h1>
+        <div id="gif-container">
+  
+        </div>
+        <span id="final-score">
+  
+        </span>
+        
+        <button id="game-over-button" class="button">New Game</button>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
