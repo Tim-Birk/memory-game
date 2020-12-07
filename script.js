@@ -1,5 +1,3 @@
-
-
 const gameContainer = document.getElementById("game");
 const currentScoreContainer = document.getElementById("current-score");
 const gameOverContainer = document.getElementById("game-over");
@@ -130,6 +128,10 @@ function handleCardClick(event) {
     card = event.target.parentElement.parentElement.parentElement;
   }
 
+  // handle if card already flipped
+  if (card.classList.contains("flipped")) {
+    return;
+  }
   // card selection logic
   if (!card1 && card !== card1) {
     // This is the first card of the comparison
